@@ -40,12 +40,11 @@ x_train = np.array(x_train)
 y_train = np.array(y_train)
 
 
-
 class ChatDataset(Dataset):
     def __init__(self):
         self.n_sample = len(x_train)
         self.x_data = torch.tensor(x_train, dtype=torch.float32)  # Ensure x_data is float32
-        self.y_data = torch.tensor(y_train, dtype=torch.long)     # Ensure y_data is long
+        self.y_data = torch.tensor(y_train, dtype=torch.long)  # Ensure y_data is long
 
     def __getitem__(self, index):
         return self.x_data[index], self.y_data[index]
@@ -67,14 +66,12 @@ train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True, 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = NeuralNet(input_size, hidden_size, output_size).to(device)
 
-
 #loss and optimizer
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
-
 for epoch in range(num_epochs):
-    for(words, labels) in train_loader:
+    for (words, labels) in train_loader:
         words = words.to(device)
         labels = labels.to(device)
 
@@ -87,7 +84,7 @@ for epoch in range(num_epochs):
         loss.backward()
         optimizer.step()
     if (epoch + 1) % 100 == 0:
-        print(f"epoch {epoch+1}/{num_epochs}, loss={loss.item():.4f}")
+        print(f"epoch {epoch + 1}/{num_epochs}, loss={loss.item():.4f}")
 
 data = {
     "model_state": model.state_dict(),

@@ -2,28 +2,63 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": ["Hi", "Hello", "Hey There", "Is anyone there", "good day", "How are you"],
-      "responses": ["Hello there", "I'm doing great, How about you?", "Hi there how can I help you?"]
+      "patterns": ["Hi", "Hello", "Hey there", "Is anyone there?", "Good day", "How are you?"],
+      "responses": ["Hello there!", "I'm doing great, how about you?", "Hi there! How can I help you?"]
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
-      "responses": ["See you later", "Thanks for using ChatBot!", "Bye! come back again"]
+      "patterns": ["Bye", "See you later", "Goodbye", "Take care", "Catch you later", "Farewell", "See you soon"],
+      "responses": ["See you later!", "Thanks for using ChatBot!", "Bye! Come back again!", "Take care! Hope to talk to you again soon.", "Farewell! Have a wonderful day!"]
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful"],
-      "responses": ["Happy to help!", "Any Time!", "My Pleasure"]
+      "patterns": ["Thanks", "Thank you", "That's helpful", "I appreciate it", "Thanks a lot", "Thank you very much", "Much appreciated"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure", "You're welcome!", "Glad I could help!"]
     },
     {
       "tag": "cars",
-      "patterns": ["What is the best car", "What is your favourite car", "Best car"],
-      "responses": ["Nissan GTR obv", "I love the Nissan GTR!", "Definitely Nissan GTR."]
+      "patterns": ["What is the best car?", "What is your favorite car?", "Best car", "Tell me about cars", "What's the top car?"],
+      "responses": ["Nissan GTR, obviously!", "I love the Nissan GTR!", "Definitely the Nissan GTR."]
     },
     {
       "tag": "coding",
-      "patterns": ["What coding language were you created with", "What is the best programming language", "List of programming languages"],
-      "responses": ["I was developed using python!", "There are different coding languages; one of the fastest are C, R, and Rust", "Python, Java, C, C++, C#"]
+      "patterns": ["What coding language were you created with?", "What is the best programming language?", "List of programming languages", "Tell me about coding languages", "Best programming languages"],
+      "responses": ["I was developed using Python!", "There are different coding languages; some of the fastest are C, R, and Rust.", "Python, Java, C, C++, C#"]
+    },
+    {
+      "tag": "weather",
+      "patterns": ["What's the weather like?", "Tell me the weather", "Weather update", "Is it raining?", "Weather forecast", "How's the weather today?", "Is it sunny outside?"],
+      "responses": ["I don't have real-time weather updates, but you can check a weather app.", "Sorry, I can't provide weather details right now.", "For the latest weather information, please refer to a weather website.", "Unfortunately, I can't give you the current weather. Please check a local weather service.", "Check a weather app for the most accurate weather information."]
+    },
+    {
+      "tag": "joke",
+      "patterns": ["Tell me a joke", "Make me laugh", "I want to hear a joke", "Tell me something funny", "Give me a joke", "Share a joke with me", "Do you know any jokes?"],
+      "responses": ["Why don't scientists trust atoms? Because they make up everything!", "What do you call fake spaghetti? An impasta!", "Why did the scarecrow win an award? Because he was outstanding in his field!", "How do you organize a space party? You planet!", "Why did the math book look sad? Because it had too many problems."]
+    },
+    {
+      "tag": "food",
+      "patterns": ["What's for dinner?", "Tell me a food recommendation", "I want to eat something", "What's a good restaurant?", "Suggest a dish", "Give me a recipe", "What's a good meal?"],
+      "responses": ["How about trying some pasta? It's delicious and easy to make!", "I recommend checking out local restaurants for the best dining experience.", "Why not try a new recipe? Cooking can be fun and rewarding!", "I suggest you check out online recipe blogs for some great ideas.", "For a meal suggestion, consider visiting a food review site for recommendations."]
+    },
+    {
+      "tag": "technology",
+      "patterns": ["Tell me about technology", "What's new in tech?", "Any tech news?", "Tell me about the latest gadgets", "What's trending in technology?", "Tech updates", "What's new in electronics?"],
+      "responses": ["There are always exciting advancements in technology. You can check out tech news websites for the latest updates.", "The tech world is constantly evolving. For the newest gadgets, visit tech review sites.", "Stay updated with the latest technology trends by following tech blogs and news sources.", "For the latest in technology, try checking out electronics review sites and tech news outlets.", "Technology is rapidly changing. Keep an eye on tech news for the most recent updates and innovations."]
+    },
+    {
+      "tag": "sports",
+      "patterns": ["What's the latest in sports?", "Tell me about recent sports events", "Any sports news?", "Who won the game last night?", "Update me on sports", "What's trending in sports?", "Tell me about the latest sports scores"],
+      "responses": ["For the latest sports updates, check out sports news websites or apps.", "You can find recent sports events and scores on sports news platforms.", "Stay updated with sports news by following your favorite sports news websites.", "Check sports apps for the latest scores and updates on games.", "Visit sports news websites for current scores and highlights from recent games."]
+    },
+    {
+      "tag": "music",
+      "patterns": ["Tell me about music", "What's trending in music?", "Any new music releases?", "Suggest a song", "What's a good playlist?", "Music recommendations", "What's popular in music right now?"],
+      "responses": ["You can find the latest music trends and releases on music streaming platforms and review sites.", "For music recommendations, check out popular playlist curators and music blogs.", "Explore music streaming services for new releases and trending songs.", "Stay updated with current music trends by following music review websites and platforms.", "Discover new music by exploring curated playlists and recommendations from streaming services."]
+    },
+    {
+      "tag": "travel",
+      "patterns": ["Tell me about travel", "What's a good travel destination?", "Any travel tips?", "Suggest a travel spot", "What's trending in travel?", "Travel recommendations", "Give me travel advice"],
+      "responses": ["For travel recommendations, check out travel blogs and destination review sites.", "Explore popular travel destinations by looking at travel guides and tourism websites.", "Consider checking travel forums and review sites for tips and advice on your next trip.", "Stay updated with travel trends by following travel magazines and blogs.", "For travel advice, consult travel experts and check out destination-specific travel guides."]
     }
   ]
 }
