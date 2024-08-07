@@ -1,0 +1,29 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey There", "Is anyone there", "good day", "How are you"],
+      "responses": ["Hello there", "I'm doing great, How about you?", "Hi there how can I help you?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": ["See you later", "Thanks for using ChatBot!", "Bye! come back again"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful"],
+      "responses": ["Happy to help!", "Any Time!", "My Pleasure"]
+    },
+    {
+      "tag": "cars",
+      "patterns": ["What is the best car", "What is your favourite car", "Best car"],
+      "responses": ["Nissan GTR obv", "I love the Nissan GTR!", "Definitely Nissan GTR."]
+    },
+    {
+      "tag": "coding",
+      "patterns": ["What coding language were you created with", "What is the best programming language", "List of programming languages"],
+      "responses": ["I was developed using python!", "There are different coding languages; one of the fastest are C, R, and Rust", "Python, Java, C, C++, C#"]
+    }
+  ]
+}
