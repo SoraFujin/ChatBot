@@ -7,7 +7,7 @@
 - **Response Generation**: Generates responses based on user queries and the defined intents.
 - **Training**: Provides mechanisms to train the chatbot with new data.
 
-- **Project Structure** <br>
+ **Project Structure** <br>
 - **main.py**: Entry point for running the chatbot. Contains the main logic for interacting with the user.
 - **intents.json**: JSON file containing the intents, patterns, and responses used by the chatbot.
 - **intents.py**: Script for processing and managing intent data.
